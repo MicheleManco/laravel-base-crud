@@ -3,7 +3,7 @@
 <ul>
     @foreach ( $comics as $comic)
         <li>
-            <a href="">{{$comic -> title}}</a>
+            <a href="{{ route('show', $comic -> id )}}">{{$comic -> title}}</a>
         </li>
     @endforeach
 </ul>

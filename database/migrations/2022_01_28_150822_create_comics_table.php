@@ -15,7 +15,7 @@ class CreatecomicsTable extends Migration
     {
         Schema::create('comics', function (Blueprint $table) {
             $table->id();
-            $table->string('title' ,60);
+            $table->string('title' ,100);
             $table->string('author', 60);
             $table->date('release');
             $table->integer('pages');
